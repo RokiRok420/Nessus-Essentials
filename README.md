@@ -217,7 +217,7 @@ Tenable documents this dpkg and systemctl start nessusd workflow for Debian/Kali
 
 For RPM-based distributions, use the appropriate Tenable package and your distribution's package manager.
 
-9. Verify the Nessus Service
+# 9. Verify the Nessus Service
 
 On Linux:
 
@@ -235,7 +235,7 @@ Expected conceptually:
 
 LISTEN ... :8834
 
-10. Initial Nessus Configuration
+# 10. Initial Nessus Configuration
 
 Open:
 
@@ -250,7 +250,7 @@ The browser may warn about the certificate because the initial Nessus installati
 For an enterprise deployment, don't simply ignore certificate-management requirements indefinitely. Put proper TLS/certificate management into the operational design.
 
 
-11. Register Nessus Essentials
+# 11. Register Nessus Essentials
 
 During initial setup:
 
@@ -291,3 +291,17 @@ Activation code on your email
 <img width="556" height="641" alt="image" src="https://github.com/user-attachments/assets/4d8794f8-3c01-4c2b-9592-31039fc0df64" />
 
 <img width="654" height="628" alt="image" src="https://github.com/user-attachments/assets/c5656ab0-29da-4046-8c8b-fef5ae08a296" />
+
+# 12. Wait for Plugin Compilation
+
+After registration, Nessus initializes and processes its plugins.
+
+During plugin compilation, Nessus restricts some operations. You may not be able to create/launch scans or policies until this process finishes.
+
+Expected output:
+
+    Nessus Dashboard
+    Plugins Updated/Compiled
+    Scanner Ready
+
+Do not start changing advanced settings while initialization is incomplete.
